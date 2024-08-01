@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Video</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Video Platform</h1>
+        <button onclick="window.location.href='index.html'" class="top-right">Home</button>
+    </header>
+    <main>
+        <div id="video-container">
+            <video id="video-player" controls></video>
+            <div id="video-info">
+                <h2 id="video-title"></h2>
+                <div id="likes-dislikes">
+                    <button id="like-button">Like</button>
+                    <span id="like-count">0</span>
+                    <button id="dislike-button">Dislike</button>
+                    <span id="dislike-count">0</span>
+                </div>
+                <div id="comments-section">
+                    <textarea id="comment-input" placeholder="Add a comment..."></textarea>
+                    <button id="comment-submit">Submit</button>
+                    <ul id="comments-list"></ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/js/video.js"></script>
+</body>
+</html>

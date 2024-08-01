@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Video</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Video Platform</h1>
+        <button onclick="window.location.href='index.html'" class="top-right">Home</button>
+    </header>
+    <main>
+        <div id="upload-container">
+            <form id="upload-form">
+                <input type="file" id="file-input" name="video" accept="video/*" required />
+                <input type="text" id="title-input" name="title" placeholder="Video Title" required />
+                <button type="submit" id="upload-button">Upload Video</button>
+            </form>
+            <div id="upload-status">
+                <progress id="upload-progress" value="0" max="100" style="width: 100%; display: none;"></progress>
+                <span id="upload-message"></span>
+            </div>
+        </div>
+    </main>
+    <script src="/js/upload.js"></script>
+</body>
+</html>
